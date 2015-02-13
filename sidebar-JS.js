@@ -1,4 +1,4 @@
-var stickynav = moveNav(".manage-beacons",".footer",".sticky",200,true);
+var stickynav = moveNav(".top-element",".footer",".sticky",200,true);
 
 function moveNav(upperElement,lowerElement,nav,offsetY) {	
 
