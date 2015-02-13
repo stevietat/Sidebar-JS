@@ -1,6 +1,6 @@
 var stickynav = moveNav(".manage-beacons",".footer",".sticky",200,true);
 
-function moveNav(upperElement,lowerElement,nav,offsetY,hide) {	
+function moveNav(upperElement,lowerElement,nav,offsetY) {	
 
 	$( window ).scroll(function() {
 		
@@ -15,12 +15,10 @@ function moveNav(upperElement,lowerElement,nav,offsetY,hide) {
 				"top" : offsetY
 			});
 		}else{
-			if(hide){
-				$( nav ).css({
-					"position" : "absolute",
-					"top" : minY
-				});
-			}
+			$( nav ).css({
+				"position" : "absolute",
+				"top" : minY
+			});			
 		}
 	})
 }
